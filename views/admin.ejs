@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- <link rel="stylesheet" href="/CSS/index.css"> -->
+    <title>Admin dashboard</title>
+</head>
+<body>
+    <header>
+        <%- include('partials/nav.ejs') %>
+    </header>
+    <section>
+        <div class="md:w-[75%] mx-auto p-4 my-5">
+            <%= msg %>
+            <form action="/additem" method="post" enctype="multipart/form-data">
+                <input class="border p-2" type="text" name="name" id="" placeholder="Name"><br><br>
+                <input class="border p-2"  type="text" name="desc" id="" placeholder="Discription"><br><br>
+                <input class="border p-2"  type="text" name="price" id="" placeholder="Price"><br><br>
+                <input class="border p-2"  type="text" name="oldprice" id="" placeholder="Oldprice"><br><br>
+                <input class="border p-2" type="file" name="pic" accept="image/jpeg, image/png, image/gif" id="" placeholder="insert file"> <br><br>
+                <!-- <input class="border p-2" type="file" name="imgurl" id="" accept="image/jpeg, image/jpg, image/png, image/gif" placeholder="upload image"> -->
+                <!-- <input class="border p-2"  type="file" name="pic" accept="image/*" id="" placeholder="insert file"><br><br> -->
+                <button class="border p-2" >send</button>
+            </form>
+        </div>
+    </section>
+</body>
+</html>

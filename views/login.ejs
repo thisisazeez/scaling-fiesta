@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="/CSS/home.css">
+    <title>login page</title>
+</head>
+<body>
+
+
+    <div class="md:w-[70%] border mx-auto md:flex justify-center my-24 shadow-md rounded-sm" id="conts">
+        <div class="w-[50%] flex justify-center items-center">
+            <img class="h-[500px]" src="/IMG/undraw_order_confirmed_re_g0if.svg" alt="image">
+        </div>
+        <div class="w-[50%] flex items-center">
+            <%= msg %>
+            <form class="md:w-[70%] h-[400px] mx-auto px-5 py-5" action="/login" method="post">
+                <input type="text" name="username" id="" placeholder="Enter Username">
+                <input class="my-5 py-3" type="text" name="password" id="" placeholder="Enter Password"><br>
+                <button class="py-3 my-3 rounded-lg bg-lime-400" type="submit">Loginn</button>
+                <p class="my-5">don't have an account <a class="text-lime-500" href="/register">register</a></p>
+            </form>
+            
+        </div>
+  
+    </div>
+    <%= msg %>
+    <form action="/login" method="post">
+        <input type="text" name="username" id="" placeholder="Enter Username"><br><br>
+        <input type="text" name="password" id="" placeholder="Enter Password"><br><br>
+        <button type="submit">Send</button>
+    </form>
+</body>
+</html>

@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="item.css">
+    <title>item</title>
+</head>
+<body>
+    <header>
+        <%- include('partials/nav.ejs') %>
+    </header>
+    <div>
+        <center>item</center>
+        <img src="<%= shop.img %>" alt="">
+        <p><%= shop.name %></p>
+        <p><%= shop.price %></p>
+            
+    
+    </div>
+</body>
+</html>
